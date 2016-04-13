@@ -1,0 +1,16 @@
+<!--name 1 af 2 -->
+	<div class="small-12 medium-6  medium-centered grid-content ">
+		<label>
+			Navn * id: {{formdata.id}}
+			<small>
+				Klik på plus for at tilføje endnu et navn
+			</small>
+			<div class="clearfix" style="margin-top: 8px;">
+				<input id="name" class="float-left has-postfix" type="text" required pattern="[ÆØÅæøåaäöÄÖa-zA-Z& ]+" placeholder="Navn" ng-model="formdata.name">
+				<a href="" ng-click="toggle_name2=!toggle_name2" class="button postfix float-right reveal-input-field bg-green">
+					+
+				</a>
+			</div>
+		</label>
+		<small class="error"></small>
+	</div>

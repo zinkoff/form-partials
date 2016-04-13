@@ -1,0 +1,17 @@
+<!-- select x 2 : tilpas options m.v. -->
+<div class="row clearfix grid-content">
+			<div class="small-6 columns float-left">
+				<label>
+					<select ng-model="selectedItem" ng-options="have.address for have in liste_med_haver track by have.id" ng-change="get_have(selectedItem.id,'*')">
+				<option value="">Vælg have efter adresse</option>
+			</select>
+				</label>
+			</div>
+			<div class="small-6 columns float-right">
+				<label>
+					<select ng-model="selectedItem" ng-options="have.name for have in liste_med_haver track by have.id" ng-change="get_have(selectedItem.id,'*')">
+						<option value="">Vælg have efter navn</option>
+					</select>
+		 		</label>
+			</div>
+		</div>

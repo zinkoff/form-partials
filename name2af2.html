@@ -1,0 +1,14 @@
+<!--name 2 / 2 -->
+	<div ng-show="toggle_name2"></div>
+	<div ng-hide="toggle_name2" class="small-12 medium-6 medium-centered grid-content">
+		<label>
+			Navn2
+			<div class="clearfix" style="margin-top: 8px;">
+				<input id="name2" class="float-left has-postfix" type="text" pattern="[ÆØÅæøåaäöÄÖa-zA-Z ]+" placeholder="Indtast eventuelt andet navn" ng-model="formdata.name2">
+				<a href="" ng-click="toggle_name2=!toggle_name2" class="button postfix float-right reveal-input-field bg-red">
+					-
+				</a>
+			</div>
+		</label>
+		<small class="error"></small>
+	</div>
